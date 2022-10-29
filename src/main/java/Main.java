@@ -18,7 +18,7 @@ public class Main {
 
         System.out.println("Введите два слова: название товара и количество. Или end");
         Scanner scanner = new Scanner(System.in);
-        Purchase purchase = new Purchase(products.size());//добавлен конструктор вместо магического числа 4
+        Basket purchase = new Basket(products);//добавлен конструктор вместо магического числа 4
         try {//добавлена обработка исключения
             while (true) {
                 String line = scanner.nextLine();
